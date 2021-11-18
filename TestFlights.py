@@ -43,7 +43,7 @@ recvThread.start()
 
 # CREATE FUNCTIONS HERE....
 
-# square
+# square Function
 def square():
     sendmsg("up 75")
     for i in range(4):
@@ -66,8 +66,7 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff')
 
-        # Review the (SDK) Software Development Kit resource for Drone Commands
-        # Delete these comments before writing your program
+        square()
 
         sendmsg('land')
 
