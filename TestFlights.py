@@ -43,10 +43,17 @@ recvThread.start()
 
 # CREATE FUNCTIONS HERE....
 
+# square
+def square():
+    sendmsg("up 75")
+    for i in range(4):
+        sendmsg("forward 100")
+        sendmsg("ccw 90")
 
-print("\nFirst & Last Names")
-print("Program Name: ")
-print("Date: ")
+
+print("\nNolan Loukes")
+print("Program Name: Test Flight")
+print("Date: 11.17.21")
 print("\n****CHECK YOUR TELLO WIFI ADDRESS****")
 print("\n****CHECK SURROUNDING AREA BEFORE FLIGHT****")
 ready = input('\nAre you ready to take flight: ')
