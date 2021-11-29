@@ -56,6 +56,13 @@ def triangle():
         sendmsg("forward 100")
         sendmsg("cw 120")
 
+# Hexagon Function
+def hexagon():
+    for i in range(5):
+        sendmsg("forward 65")
+        sendmsg("cw 120")
+
+
 
 
 print("\nNolan Loukes")
@@ -73,7 +80,7 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff')
 
-        triangle()
+        hexagon()
 
         sendmsg('land')
 
