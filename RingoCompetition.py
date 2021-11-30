@@ -4,6 +4,7 @@
 
 import threading, socket, sys, time, subprocess
 
+#Drone D8DDCF
 
 # GLOBAL VARIABLES DECLARED HERE....
 host = ''
@@ -45,14 +46,16 @@ recvThread.start()
 
 def firstHoop():
 
-   sendmsg("up 85")
+   sendmsg("up 79")
 
    sendmsg("forward 200")
 
-"""
+
 def secondHoop():
 
+    sendmsg("go 100, 20, 0, 50")
 
+"""
 def thirdHoop():
 
 
@@ -75,6 +78,8 @@ try:
         sendmsg('takeoff')
 
         firstHoop()
+        secondHoop()
+
 
         sendmsg('land')
 
