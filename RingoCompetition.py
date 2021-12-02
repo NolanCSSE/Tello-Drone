@@ -4,7 +4,7 @@
 
 import threading, socket, sys, time, subprocess
 
-#Drone D8DDCF
+#Drone D8DD7E
 
 # GLOBAL VARIABLES DECLARED HERE....
 host = ''
@@ -53,12 +53,14 @@ def firstHoop():
 
 def secondHoop():
 
-    sendmsg("go 120, 40, 40, 50")
+    sendmsg("go 120, 40, 5, 50")
 
-"""
+
 def thirdHoop():
 
+    sendmsg("jump 50, 5, 30, 50 70")
 
+"""
 def fourthHoop():
 """
 
@@ -79,6 +81,7 @@ try:
 
         firstHoop()
         secondHoop()
+        thirdHoop()
 
 
         sendmsg('land')
