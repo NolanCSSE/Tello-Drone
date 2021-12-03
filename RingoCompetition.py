@@ -58,7 +58,7 @@ def secondHoop():
 
 def thirdHoop():
 
-    sendmsg("jump 50, 5, 30, 50 70")
+    sendmsg("curve 100, 100, 0, 30, 250, 0, 60")
 
 """
 def fourthHoop():
