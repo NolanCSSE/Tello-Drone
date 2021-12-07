@@ -43,6 +43,12 @@ recvThread.start()
 
 # CREATE FUNCTIONS HERE....
 
+def hexagon():
+    sendmsg("up 55")
+    for i in range(6):
+        sendmsg("forward 50")
+        sendmsg("cw 60")
+
 
 print("\nFirst & Last Names")
 print("Program Name: ")
@@ -59,8 +65,7 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff')
 
-        # Review the (SDK) Software Development Kit resource for Drone Commands
-        # Delete these comments before writing your program
+        hexagon()
 
         sendmsg('land')
 
