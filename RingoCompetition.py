@@ -46,19 +46,19 @@ recvThread.start()
 
 def firstHoop():
 
-   sendmsg("up 69")
+   sendmsg("up 49")
 
    sendmsg("forward 190")
 
 
 def secondHoop():
 
-    sendmsg("go 120, 40, 5, 50")
+    sendmsg("go 120, 40, 0, 50")
 
 
 def thirdHoop():
 
-    sendmsg("curve 100, 100, 0, 30, 250, 0, 60")
+    sendmsg('curve 100 100 0 30 250 0 60')
 
 """
 def fourthHoop():
@@ -81,7 +81,6 @@ try:
 
         firstHoop()
         secondHoop()
-        thirdHoop()
 
 
         sendmsg('land')
