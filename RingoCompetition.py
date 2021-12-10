@@ -53,7 +53,7 @@ def firstHoop():
 
 def secondHoop():
 
-    sendmsg("go 120, 40, 0, 50")
+    sendmsg("go 100, 0, 35, 65", 8)
 
 
 def thirdHoop():
